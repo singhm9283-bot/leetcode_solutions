@@ -10,4 +10,4 @@ class Solution:
                 ans.append("Buzz")
             else:
                 ans.append(str(i))
-        return ans
+        return ans 
