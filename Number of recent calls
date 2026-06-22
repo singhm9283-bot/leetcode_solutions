@@ -1,0 +1,15 @@
+class RecentCounter:
+
+    def __init__(self):
+        self.pings = []
+
+    def ping(self, t: int) -> int:
+        self.pings.append(t)
+
+        count = 0
+
+        for time in self.pings:
+            if time >= t - 3000:
+                count += 1
+
+        return count
